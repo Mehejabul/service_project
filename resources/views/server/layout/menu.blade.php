@@ -182,8 +182,8 @@
                                 class="dropdown-toggle nav-link dropdown-user-link" href="#"
                                 data-toggle="dropdown">
                                 <div class="user-nav d-sm-flex d-none">
-                                    <span
-                                        class="user-name">{{ Auth::guard('web')->user()->name }}</span>
+                                    {{--  <span
+                                        class="user-name">{{ Auth::guard('web')->user()->name }}</span>  --}}
                                          {{-- <span
                                         class="user-status text-muted">@if (Auth::guard('web')->user()->designation)
                                             {{ Auth::guard('web')->user()->designation->title }}
@@ -235,7 +235,7 @@
 
                 <li class=" navigation-header"><span>Admin view View</span>
                 </li>
-                <li class=" nav-item"><a href="#"><i class="bx bx-globe"></i><span
+                <li class=" nav-item"><a href="{{route('category.index')}}"><i class="bx bx-globe"></i><span
                             class="menu-title">category</span></a>
                 </li>
                 <li class=" nav-item"><a href="#"><i class="bx bx-globe"></i><span
